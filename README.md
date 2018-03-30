@@ -1,5 +1,7 @@
 # butt-landing
 
+[![Docker Automated build](https://img.shields.io/docker/automated/buttcloud/butt-landing.svg)](https://hub.docker.com/r/buttcloud/butt-landing/)
+
 a public-facing landing page for your Scuttlebutt pub server
 
 ## install

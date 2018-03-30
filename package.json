@@ -8,7 +8,10 @@
     "start": "node ./bin",
     "test:deps": "dependency-check . && dependency-check . --extra --no-dev -i es2040",
     "test:lint": "standard",
-    "test": "npm-run-all -s test:lint test:deps"
+    "test": "npm-run-all -s test:lint test:deps",
+    "docker:build": "docker build -t buttcloud/butt-landing .",
+    "docker:push": "docker push buttcloud/butt-landing",
+    "docker:run": "docker run -it --rm --init -v ~/.ssb:/home/node/.ssb --net=host buttcloud/butt-landing"
   },
   "repository": {
     "type": "git",
