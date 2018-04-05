@@ -1,5 +1,5 @@
 var http = require('http')
-var Logger = require('pino-http')
+var HttpLogger = require('pino-http')
 var serverSummary = require('server-summary')
 
 exports.name = 'landing'
@@ -12,8 +12,8 @@ exports.init = function (sbot, config) {
   var host = conf.host || config.host || '::'
 
   var httpLogger = config.logger
-    ? Logger({ logger: config.logger })
-    : Logger()
+    ? HttpLogger({ logger: config.logger })
+    : HttpLogger()
   var logger = httpLogger.logger
 
   var server = http.createServer(serve)
