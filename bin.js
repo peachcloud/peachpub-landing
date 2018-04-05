@@ -2,9 +2,12 @@
 
 var Reconnect = require('pull-reconnect')
 var Client = require('ssb-client')
+var Config = require('ssb-config')
 var Logger = require('pino')
 
-var sbot = createClient(function (sbot, config) {
+var config = Config(process.env.ssb_appname)
+
+var sbot = createClient(config, function (sbot) {
   require('.').init(sbot, config)
 })
 
