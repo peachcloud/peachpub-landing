@@ -9,5 +9,8 @@ RUN npm install
 COPY . .
 
 USER node
+RUN mkdir /home/node/.ssb
+VOLUME ["/home/node/.ssb"]
+
 EXPOSE 8901
 ENTRYPOINT [ "/usr/src/app/bin.js" ]
