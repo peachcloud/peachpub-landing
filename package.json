@@ -1,6 +1,6 @@
 {
   "name": "butt-landing",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "a public-facing landing page for your Scuttlebutt pub server",
   "main": "index.js",
   "bin": "bin.js",
