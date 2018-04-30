@@ -1,5 +1,5 @@
 {
-  "name": "butt-landing",
+  "name": "buttpub-landing",
   "version": "1.0.3",
   "description": "a public-facing landing page for your Scuttlebutt pub server",
   "main": "index.js",
@@ -9,21 +9,21 @@
     "test:deps": "dependency-check . && dependency-check . --extra --no-dev -i es2040",
     "test:lint": "standard",
     "test": "npm-run-all -s test:lint test:deps",
-    "docker:build": "docker build -t buttcloud/butt-landing .",
-    "docker:push": "docker push buttcloud/butt-landing",
-    "docker:run": "docker run -it --rm --init -v ~/.ssb:/home/node/.ssb --net=host buttcloud/butt-landing"
+    "docker:build": "docker build -t buttcloud/buttpub-landing .",
+    "docker:push": "docker push buttcloud/buttpub-landing",
+    "docker:run": "docker run -it --rm --init -v ~/.ssb:/home/node/.ssb --net=host buttcloud/buttpub-landing"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ahdinosaur/butt-landing.git"
+    "url": "git+https://github.com/ahdinosaur/buttpub-landing.git"
   },
   "keywords": [],
   "author": "Mikey <michael.williams@enspiral.com> (http://dinosaur.is)",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/ahdinosaur/butt-landing/issues"
+    "url": "https://github.com/ahdinosaur/buttpub-landing/issues"
   },
-  "homepage": "https://github.com/ahdinosaur/butt-landing#readme",
+  "homepage": "https://github.com/ahdinosaur/buttpub-landing#readme",
   "devDependencies": {
     "dependency-check": "^2.7.0",
     "npm-run-all": "^4.0.1",
