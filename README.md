@@ -1,6 +1,6 @@
-# buttpub-landing
+# peachpub-landing
 
-[![Docker Automated build](https://img.shields.io/docker/automated/buttcloud/buttpub-landing.svg)](https://hub.docker.com/r/buttcloud/buttpub-landing/)
+[![Docker Automated build](https://img.shields.io/docker/automated/peachcloud/peachpub-landing.svg)](https://hub.docker.com/r/peachcloud/peachpub-landing/)
 
 a public-facing landing page for your Scuttlebutt pub server
 
@@ -11,18 +11,18 @@ as an sbot plugin:
 ```sh
 mkdir -p ~/.ssb/node_modules
 cd ~/.ssb/node_modules
-git clone git://github.com/buttcloud/buttpub-landing buttpub-landing
-cd buttpub-landing
+git clone git://github.com/peachcloud/peachpub-landing peachpub-landing
+cd peachpub-landing
 npm install
-sbot plugins.enable buttpub-landing
+sbot plugins.enable peachpub-landing
 # restart sbot
 ```
 
 or standalone:
 
 ```sh
-git clone git://github.com/buttcloud/buttpub-landing buttpub-landing
-cd buttpub-landing
+git clone git://github.com/peachcloud/peachpub-landing peachpub-landing
+cd peachpub-landing
 npm install
 ./bin.js
 ```
@@ -33,7 +33,7 @@ to browse landing page, navigate to http://localhost:8901
 
 ## config
 
-to change `buttpub-landing`'s default options, edit your `~/.ssb/config` to have properties like:
+to change `peachpub-landing`'s default options, edit your `~/.ssb/config` to have properties like:
 
 ```json
 {

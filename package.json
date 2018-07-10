@@ -1,5 +1,5 @@
 {
-  "name": "buttpub-landing",
+  "name": "peachpub-landing",
   "version": "1.0.3",
   "description": "a public-facing landing page for your Scuttlebutt pub server",
   "main": "index.js",
@@ -9,21 +9,21 @@
     "test:deps": "dependency-check . && dependency-check . --extra --no-dev -i es2040",
     "test:lint": "standard",
     "test": "npm-run-all -s test:lint test:deps",
-    "docker:build": "docker build -t buttcloud/buttpub-landing .",
-    "docker:push": "docker push buttcloud/buttpub-landing",
-    "docker:run": "docker run -it --rm --init -v ~/.ssb:/home/node/.ssb --net=host buttcloud/buttpub-landing"
+    "docker:build": "docker build -t peachcloud/peachpub-landing .",
+    "docker:push": "docker push peachcloud/peachpub-landing",
+    "docker:run": "docker run -it --rm --init -v ~/.ssb:/home/node/.ssb --net=host peachcloud/peachpub-landing"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ahdinosaur/buttpub-landing.git"
+    "url": "git+https://github.com/ahdinosaur/peachpub-landing.git"
   },
   "keywords": [],
   "author": "Mikey <michael.williams@enspiral.com> (http://dinosaur.is)",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/ahdinosaur/buttpub-landing/issues"
+    "url": "https://github.com/ahdinosaur/peachpub-landing/issues"
   },
-  "homepage": "https://github.com/ahdinosaur/buttpub-landing#readme",
+  "homepage": "https://github.com/ahdinosaur/peachpub-landing#readme",
   "devDependencies": {
     "dependency-check": "^2.7.0",
     "npm-run-all": "^4.0.1",
