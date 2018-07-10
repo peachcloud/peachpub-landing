@@ -1,6 +1,6 @@
 {
   "name": "peachpub-landing",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "a public-facing landing page for your Scuttlebutt pub server",
   "main": "index.js",
   "bin": "bin.js",
